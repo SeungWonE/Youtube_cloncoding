@@ -1,0 +1,203 @@
+body {
+	margin : 0px;
+	display : grid;
+	grid-template-columns: 250px auto;
+	grid-template-rows: 60px auto;
+}
+
+header {
+	position: fixed;
+	
+	display : flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between; /*정분할정렬*/
+
+	height: 60px;
+	width: 100%;
+	background-color: #FFFFFFFC;
+	
+	grid-column-start: 1;
+	grid-column-end: 3;
+	grid-row-start: 1;
+	grid-row-end: 2;
+	
+	border-bottom: solid 1px #D2D2D2;
+}
+
+header .left{
+	display : flex;
+	flex-direction: row;
+	flex-basis: 250px;
+	justify-content: center;
+	align-items: center;
+
+	height: 60px;
+	
+	border-bottom: solid 1px white;
+}
+header .left #menu{
+	width: 30px;
+	height: 30px;
+	margin-right: 16px;
+	
+}
+header .left #logo{
+	margin-right: 60px;
+}
+header .middle{
+	display : flex;
+	flex-direction: row;
+	height: 35px;
+	justify-content: center;
+}
+header .middle #search{
+	width : 540px;
+	height: 35px;
+}
+header .middle #searchBtn{
+	width: 60px;
+	height: 35px;
+	background-image : url("./image/search.png");
+	background-repeat: no-repeat;
+	object-fit: contain;
+}
+header .middle #searchBtn:hover{
+	filter: brightness(80%);
+}
+header .right{
+	display : flex;
+	flex-direction: row;
+	flex-basis: 250px;
+	justify-content: center;
+	align-items: center;
+	height: 60px;
+}
+header .right #loginBtn{
+	margin-left: 100px;
+	width: 70px;
+	height: 35px;
+	background: white;
+	border: solid blue 1px;
+	color: blue;
+}
+header .right #loginBtn:hover{
+	border: solid skyblue 1px;
+	color: skyblue;
+}
+
+
+nav {
+	position: fixed;
+	
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 2;
+	grid-row-end: 3;
+	
+	padding-top: 60px;
+	
+}
+nav .navIndex{
+	color: #222222;
+	font-size: 15px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 30px;
+}
+nav .icons{
+	display: flex;
+	flex-direction: row;
+	width: 250px;
+	height: 40px;
+	background-color: white;
+	border: none;
+	align-items: center;
+}
+nav .icons img{
+	padding-left: 30px;
+	padding-right: 30px;
+	border-radius: 50%;
+}
+nav .icons:hover{
+	background-color: whitesmoke;
+}
+
+
+main {
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 2;
+	grid-row-end: 3;
+	
+	display: grid;
+	grid-template-columns: 23% 23% 23% 23%;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+	
+	justify-content: center;
+	background-color: #F9F9F9;
+}
+main .content{
+	display: grid;
+	grid-template-columns: 40px auto;
+	grid-template-rows: auto 40px auto auto;
+	
+	margin: 10px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+main .content:hover{
+	background-color: whitesmoke;
+}
+main .content .video{
+	grid-column-start: 1;
+	grid-column-end: 3;
+	grid-row-start: 1;
+	grid-row-end: 2;
+	
+	padding-bottom: 10px;
+}
+main .content .profileImg{
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 2;
+	grid-row-end: 3;
+	
+	border-radius: 50%;
+}
+main .content .title{
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 2;
+	grid-row-end: 3;
+	
+	font-size: 15px;
+	
+	padding-left: 10px;
+}
+main .content .profileName{
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 3;
+	grid-row-end: 4;
+	
+	font-size: 13px;
+	color: gray;
+	
+	padding-left: 10px;
+	padding-top: 3px;
+}
+main .content .viewNdate{
+	display: flex;
+	flex-direction: row;
+	
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 4;
+	grid-row-end: 5;
+	
+	font-size: 13px;
+	color: gray;
+	
+	padding-left: 10px;
+}

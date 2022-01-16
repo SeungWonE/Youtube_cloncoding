@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html style="font-size: 10px; font-family: Roboto, Arial, sans-serif;" lang="ko-KR">
+	
+<link rel="preconnect" href="https://fonts.googleapis.com"> <!-- 구글 폰트 -->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">
+
+	<head>
+		<link rel="stylesheet" href="style.css"> <!-- CSS -->
+	</head>
+	
+	<body>
+		<!-- 상단메뉴 -->
+		<header>
+			
+			<div class='left'>
+				<img id='menu' src="./image/menu.png" width="25px">
+				<img id='logo' src="./image/logo.png" width="100px">
+			</div>
+			
+			<div class='middle'>
+				<input id="search" type="search" placeholder="검색">
+				<input id="searchBtn" type="button">
+			</div>
+			
+			<div class='right'>
+				<input id="loginBtn"type="button" value="로그인">
+			</div>
+			
+		</header>
+		
+		<!-- 좌측 메뉴 -->
+		<nav>
+			<div class="navIndex">인기 YOUTUBE</div>
+	
+			<button class="icons">
+				<img src="./image/nav/game.jpg" width="25px">
+				<div>게임</div>
+			</button>
+			<button class="icons">
+				<img src="./image/nav/live.jpg" width="25px">
+				<div>실시간</div>
+			</button>
+			<button class="icons">
+				<img src="./image/nav/movie.jpg" width="25px">
+				<div>영화</div>
+			</button>
+			<button class="icons">
+				<img src="./image/nav/music.jpg" width="25px">
+				<div>음악</div>
+			</button>
+			<button class="icons">
+				<img src="./image/nav/news.jpg" width="25px">
+				<div>뉴스</div>
+			</button>
+			<button class="icons">
+				<img src="./image/nav/sports.jpg" width="25px">
+				<div>스포츠</div>
+			</button>
+			<button class="icons">
+				<img src="./image/nav/study.jpg" width="25px">
+				<div>공부</div>
+			</button>
+			<button class="icons">
+				<img src="./image/nav/vr.jpg" width="25px">
+				<div>360도 영상</div>
+			</button>
+		</nav>
+		
+		<!-- 메인 컨텐츠 -->
+		<main id="container">
+
+			<!-- 여기에 태그를 js로 새로 만들어 x json파일 리스트만큼 반복 배치할것 -->
+
+		</main>
+		
+	</body>
+	
+	<script type="text/javascript" src="data.json"></script> <!-- 유튜브 영상 데이터 json-->
+	<script src="javascript.js"></script> <!-- 자바스크립트 -->
+	
+</html> 
